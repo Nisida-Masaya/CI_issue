@@ -1,0 +1,26 @@
+{
+  "name": "ci_issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "request": "^2.55.0",
+  "encoding-japanese": "^1.0.23",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nisida-Masaya/CI_issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nisida-Masaya/CI_issue/issues"
+  },
+  "homepage": "https://github.com/Nisida-Masaya/CI_issue#readme",
+  "dependencies": {
+    "csv": "^6.0.5",
+    "express": "^4.17.2",
+    "iconv-lite": "^0.4.24"
+  }
+}
