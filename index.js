@@ -1,4 +1,3 @@
-const http = require('http');
 const express = require('express');
 const fs = require('fs');
 const csv = require('csv');
@@ -25,5 +24,4 @@ app.get("/", function(req, res){
     });
 });
 
-const server = http.createServer(app);
-server.listen(3000);
+app.listen(3000);
