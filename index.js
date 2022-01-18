@@ -15,7 +15,7 @@ app.get("/", function(req, res){
     code = req.query.code;
 
     if(!code){
-        code = '7910000';
+        code = 79100064;
     }
 
     address.forEach(function( value ) {
