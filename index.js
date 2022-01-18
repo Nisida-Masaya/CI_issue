@@ -14,6 +14,10 @@ fs.createReadStream(__dirname + '/38EHIME.csv').pipe(iconv.decodeStream('SJIS'))
 app.get("/", function(req, res){
     code = req.query.code;
 
+    if(!code){
+        code = '7910000';
+    }
+
     address.forEach(function( value ) {
         if (code == Number(value[2])) {
             res.jsonp(value[6] + value[7] + value[8]);
