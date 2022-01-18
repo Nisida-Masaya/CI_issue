@@ -5,7 +5,7 @@ const csv = require('csv');
 const iconv = require('iconv-lite');
 const app = express();
 
-fs.createReadStream(__dirname + '/38EHIME.csv').pipe(iconv.decodeStream('SJIS'))
+fs.createReadStream(__dirname + '/38EHIME.CSV').pipe(iconv.decodeStream('SJIS'))
 .pipe(iconv.encodeStream('UTF-8')).pipe(csv.parse(function(err, data) {
     address = data;
 }));
